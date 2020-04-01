@@ -15,6 +15,10 @@ class MainGame{
         this.companionNumber ++
     }
 
+    addCompounderMethod = function(){
+        this.clickCompanionCost = this.clickCompanionCost + this.clickCompanionCost*.2
+    }
+
     getCompanionNumber = function(){
         return this.companionNumber;
     }
@@ -40,10 +44,12 @@ class MainGame{
     stopCompanionCount = function(){
         this.increaseCompanionMethod()
 
-        this.companionNumber = if ("") {
-            
-        } else {
-            
-        }
+        this.addCompounderMethod()
+    }
+
+    addAutoClicks = function () {
+        this.increaseCompanionMethod()
+
+        this.addAutoClicks()
     }
 }

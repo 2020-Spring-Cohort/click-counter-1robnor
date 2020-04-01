@@ -1,0 +1,5 @@
+*{
+    background-color : burlywood;
+    min-height: 100vh;
+    display: flex;
+}
