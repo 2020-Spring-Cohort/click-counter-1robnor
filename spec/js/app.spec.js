@@ -60,6 +60,12 @@ describe("Cookie Clicker Camlamity", function(){
 
             expect(sut.stopCompanionCount()).toBe()
         })
+
+        it("when the addAutoClicks event is executed, add the amount of campanionNumber to the click total", function(){
+            sut.increaseCompanionMethod()
+
+            expected(sut.addAutoClicks()).toBe()
+        })
     })
 
 

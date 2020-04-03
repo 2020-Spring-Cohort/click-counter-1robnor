@@ -21,10 +21,6 @@ class MainGame{
         return this.companionNumber;
     }
 
-    stopCompanionCount = function(){
-        if(clickCount < clickCompanionCost); 
-    }
-
     buyCompanion = function(){
         this.increaseCompanionMethod()
 
@@ -42,10 +38,15 @@ class MainGame{
 
         this.clickCompanionCost ++ %10
     }
-      
-    stopCompanionCount = function(){
-        this.increaseCompanionMethod()
 
-        this.addCompounderMethod()
+    stopCompanionCount = function(){
+        this.increaseCompanionMethod
+
+        if(clickCount < clickCompanionCost); 
     }
 
+    addAutoClick = function(){
+        this.increaseCompanionMethod
+
+        this.companionNumber + clickCount;
+    }
