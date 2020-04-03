@@ -1,16 +1,15 @@
 class MainGame{
-
-    clickCount = 0;
-    clickMethod = function(){
-        this.clickCount ++
-    }
+    clickCount = 1;
+    clickValue = 1;
+    companionNumber = 1;
+    clickCompanionCost = 100;
+    addAutoClicks = 0;
+}
 
     getClickCount = function(){
         return this.clickCount;
     }
 
-    companionNumber = 0;
-    clickCompanionCost = 100;
     increaseCompanionMethod = function(){
         this.companionNumber ++
     }
@@ -21,6 +20,10 @@ class MainGame{
 
     getCompanionNumber = function(){
         return this.companionNumber;
+    }
+
+    stopCompanionCount = function(){
+        return this.
     }
 
     buyCompanion = function(){
@@ -44,12 +47,6 @@ class MainGame{
     stopCompanionCount = function(){
         this.increaseCompanionMethod()
 
-        this.addCompounderMethod()
+        this.()
     }
 
-    addAutoClicks = function () {
-        this.increaseCompanionMethod()
-
-        this.addAutoClicks()
-    }
-}
