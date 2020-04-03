@@ -3,7 +3,6 @@ class MainGame{
     clickValue = 1;
     companionNumber = 1;
     clickCompanionCost = 100;
-    addAutoClicks = 0;
 }
 
     getClickCount = function(){
@@ -23,7 +22,7 @@ class MainGame{
     }
 
     stopCompanionCount = function(){
-        return this.
+        if(clickCount < clickCompanionCost); 
     }
 
     buyCompanion = function(){
@@ -47,6 +46,6 @@ class MainGame{
     stopCompanionCount = function(){
         this.increaseCompanionMethod()
 
-        this.()
+        this.addCompounderMethod()
     }
 
