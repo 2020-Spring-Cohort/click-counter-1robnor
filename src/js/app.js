@@ -3,6 +3,8 @@ class MainGame{
     clickValue = 1;
     companionNumber = 1;
     clickCompanionCost = 100;
+    compounderCost = 0;
+    compounderCount = 0;
 }
 
     getClickCount = function(){
@@ -40,13 +42,19 @@ class MainGame{
     }
 
     stopCompanionCount = function(){
-        this.increaseCompanionMethod
+        this.increaseCompanionMethod()
 
         if(clickCount < clickCompanionCost); 
     }
 
     addAutoClick = function(){
-        this.increaseCompanionMethod
+        this.increaseCompanionMethod()
 
         this.companionNumber + clickCount;
+    }
+
+    newCompounder = function(){
+        this.addCompounderMethod()
+
+        this.compounderCost - this.clickCount;
     }

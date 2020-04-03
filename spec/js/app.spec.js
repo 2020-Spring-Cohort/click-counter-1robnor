@@ -66,7 +66,10 @@ describe("Cookie Clicker Camlamity", function(){
 
             expected(sut.addAutoClicks()).toBe()
         })
+        it("should purchase a Compounder with 10 clicks from your clickCount", function(){
+            sut.addCompounderMethod()
+
+            expected(sut.newCompounder()).toBe()
+        })
     })
-
-
 })
