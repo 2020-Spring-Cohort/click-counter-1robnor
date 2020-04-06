@@ -53,9 +53,23 @@ class ClickCounter{
 
         this.addAutoClick;
     }
-    buyCCCompounder = function(){
+    buyCollectiveCulminationCompounder = function(){
         this.addCompounder()
 
-        this.collectiveCulminationCompounder = this.collectiveCulminationCompunderCost - this.clickCount;
+        this.collectiveCulminationCompounder = this.collectiveCulminationCompunderCost - this.clickCount
+    }
+    addCollectiveCulminationCompounder = function(){
+        this.collectiveCulminationCompunderCost = this.collectiveCulminationCompunderCost + this.collectiveCulminationCompunderCost*.2
+    }
+    secondCollectiveCulminationCompounder = function(){
+        this.addCompounder()
+
+        this.collectiveCulminationCompounder = this.collectiveCulminationCompunderCost - this.clickCount ++ %10 
+    }
+    continuousCollectiveCulminationCompounder = function(){
+        this.addCompounder()
+
+        this.collectiveCulminationCompounderCount ++ %10
+
     }
 }

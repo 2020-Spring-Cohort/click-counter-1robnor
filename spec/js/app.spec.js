@@ -67,9 +67,19 @@ describe("Cookie Clicker Camlamity", function(){
             expected(sut.increaseCompanion()).toBe()
         })
         it("should purchase a collectiveCulminationCompounder with 10 clicks from your clickCount", function(){
-            sut.addCompounder()
+            sut.buyCollectiveCulminationCompounder()
 
-            expected(sut.buyCCCompounder()).toBe()
+            expected(sut.buyCollectiveCulminationCompounder()).toBe()
         })
+        it("should increase purchase of secondCollectiveCulminationCompounder by an additional %10", function(){
+            sut.secondCollectiveCulminationCompounder()
+
+            expected(sut.secondCollectiveCulminationCompounder()).toBe()
+        })
+        it("should increase the cost of every additional continuousCollectiveCulminationCompounder by an additional %10", function(){
+            sut.continuousCollectiveCulminationCompounder()
+
+            expected(sut.continuousCollectiveCulminationCompounder()).toBe()
+        }
     })
 })
