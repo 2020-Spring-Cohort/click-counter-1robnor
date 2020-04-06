@@ -1,60 +1,59 @@
-class MainGame{
-    clickCount = 1;
-    clickValue = 1;
-    companionNumber = 1;
-    clickCompanionCost = 100;
-    compounderCost = 0;
-    compounderCount = 0;
-}
+class ClickCounter{
 
+    constructor(){    
+        this.clickCount = 0;
+        this.clickValue = 1;
+        this.companionCount = 0;
+        this.clickCompanionCost = 100;
+        this.compounderCost = 0;
+        this.compounderCount = 100;
+    }
+    clickCount = 0;
+    clickCount = function(){
+        this.clickCount ++
+    }
     getClickCount = function(){
         return this.clickCount;
     }
-
-    increaseCompanionMethod = function(){
+    companionNumber = 0;
+    clickCompanionCost = 100;
+    increaseCompanion = function(){
         this.companionNumber ++
     }
-
-    addCompounderMethod = function(){
+    addCompounder = function(){
         this.clickCompanionCost = this.clickCompanionCost + this.clickCompanionCost*.2
     }
-
     getCompanionNumber = function(){
         return this.companionNumber;
     }
-
     buyCompanion = function(){
-        this.increaseCompanionMethod()
+        this.increaseCompanion()
 
         this.clickCount = this.clickCount - this.clickCompanionCost
     }
-
     buySecondCompanion = function(){
-        this.increaseCompanionMethod()
+        this.increaseCompanion()
 
         this.clickCompanionCost = this.clickCount ++ %10 
     }
-
     buyContinuousCompanions = function(){
-        this.increaseCompanionMethod()
+        this.increaseCompanion()
 
         this.clickCompanionCost ++ %10
     }
-
     stopCompanionCount = function(){
-        this.increaseCompanionMethod()
+        this.increaseCompanion()
 
-        if(clickCount < clickCompanionCost); 
+        this.addCompounder; 
     }
-
     addAutoClick = function(){
-        this.increaseCompanionMethod()
+        this.increaseCompanion()
 
-        this.companionNumber + clickCount;
+        this.addAutoClick;
     }
-
     newCompounder = function(){
-        this.addCompounderMethod()
+        this.addCompounder()
 
         this.compounderCost - this.clickCount;
     }
+}

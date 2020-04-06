@@ -3,7 +3,7 @@ describe("Cookie Clicker Camlamity", function(){
     let sut;
     
     beforeEach(function(){
-        sut = new MainGame
+        sut = new ClickCounter
         sut.clickCount = 0
     })
 
@@ -26,48 +26,48 @@ describe("Cookie Clicker Camlamity", function(){
     describe("Click Companions", function(){
 
         it("should return a clickCompanion", function(){
-            sut.increaseCompanionMethod()
+            sut.increaseCompanion()
 
             expect(sut.companionNumber).toBe(1)
         })
 
-        it("should return 1 after increaseCompanionMethod", function(){
-            sut.increaseCompanionMethod()
+        it("should return 1 after increaseCompanion", function(){
+            sut.increaseCompanion()
 
             expect(sut.getCompanionNumber()).toBe(1)
         })
 
         it("should subtract the clickCompanionCost from your current clickCount", function(){
-            sut.increaseCompanionMethod()
+            sut.increaseCompanion()
 
             expect(sut.buyCompanion()).toBe()
         })
 
         it("should increase the clickCompainonCost by %10 to be 110 for second purchase", function(){
-            sut.increaseCompanionMethod()
+            sut.increaseCompanion()
 
             expect(sut.buySecondCompanion()).toBe()
         })
 
         it("should increase the cost of every additional clickCompanionCost by an additional %10", function(){
-            sut.increaseCompanionMethod()
+            sut.increaseCompanion()
 
             expect(sut.buyContinuousCompanions()).toBe()
         })
 
         it("should ensure there are enough clickCount to buy a clickCompanionCost", function(){
-            sut.increaseCompanionMethod()
+            sut.increaseCompanion()
 
             expect(sut.stopCompanionCount()).toBe()
         })
 
         it("when the addAutoClicks event is executed, add the amount of campanionNumber to the click total", function(){
-            sut.increaseCompanionMethod()
+            sut.increaseCompanion()
 
             expected(sut.addAutoClicks()).toBe()
         })
         it("should purchase a Compounder with 10 clicks from your clickCount", function(){
-            sut.addCompounderMethod()
+            sut.addCompounder()
 
             expected(sut.newCompounder()).toBe()
         })
