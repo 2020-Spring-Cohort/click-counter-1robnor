@@ -9,14 +9,14 @@ describe("Cookie Clicker Camlamity", function(){
 
     describe("Main Actions", function(){
 
-        it("clickAction should increase click count by 1", function(){
-            sut.clickMethod()
+        it("clickCount should increase click count by 1", function(){
+            sut.getClickCount()
 
-            expect(sut.clickCount).toBe(1)
+            expect(sut.getClickCount()).toBe(1)
         })
 
-        it("should return 1 after clickMethod", function(){
-            sut.clickMethod()
+        it("should return 1 after clickCount", function(){
+            sut.getClickCount()
 
             expect(sut.getClickCount()).toBe(1)
         })
@@ -64,12 +64,12 @@ describe("Cookie Clicker Camlamity", function(){
         it("when the addAutoClicks event is executed, add the amount of campanionNumber to the click total", function(){
             sut.increaseCompanion()
 
-            expected(sut.addAutoClicks()).toBe()
+            expected(sut.increaseCompanion()).toBe()
         })
-        it("should purchase a Compounder with 10 clicks from your clickCount", function(){
+        it("should purchase a collectiveCulminationCompounder with 10 clicks from your clickCount", function(){
             sut.addCompounder()
 
-            expected(sut.newCompounder()).toBe()
+            expected(sut.buyCCCompounder()).toBe()
         })
     })
 })

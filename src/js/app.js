@@ -5,15 +5,17 @@ class ClickCounter{
         this.clickValue = 1;
         this.companionCount = 0;
         this.clickCompanionCost = 100;
-        this.compounderCost = 0;
-        this.compounderCount = 100;
+        this.compounderCount = 0;
+        this.compounderCost = 100;
+        this.collectiveCulminationCompunderCost = 10;
+        this.collectiveCulminationCompounderCount = 0;
     }
     clickCount = 0;
     clickCount = function(){
         this.clickCount ++
     }
     getClickCount = function(){
-        return this.clickCount;
+        return this.clickValue;
     }
     companionNumber = 0;
     clickCompanionCost = 100;
@@ -51,9 +53,9 @@ class ClickCounter{
 
         this.addAutoClick;
     }
-    newCompounder = function(){
+    buyCCCompounder = function(){
         this.addCompounder()
 
-        this.compounderCost - this.clickCount;
+        this.collectiveCulminationCompounder = this.collectiveCulminationCompunderCost - this.clickCount;
     }
 }
